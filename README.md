@@ -43,7 +43,8 @@ Angular:
 * Y: 0
 * Z: *f(angle)*
 
-**D. Spiral motion**  
+**D. Spiral motion**    
+
 The below mentioned configuration is used for implementing spiral motion in a robot: 
 
 Linear:  
