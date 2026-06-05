@@ -58,7 +58,7 @@ Angular:
 * Z: *constant*
 
 
-## **What are we implementing?**
+## **2. What are we implementing?**
 
 We are trying to implement a cleaning robot that moves around in a bounded environment and cleans it. First let us take a look at the steps of implementation. 
 
