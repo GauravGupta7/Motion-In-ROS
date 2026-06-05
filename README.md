@@ -64,7 +64,7 @@ We are trying to implement a cleaning robot that moves around in a bounded envir
 
 **Step 1: Understanding topics and messages used.**
 
-Since we will be testing the code on the turtle, we can check the topics used using the command ```rostopic list``` after the application is up and running. The exact topic that we will use for this purpose is the <mark>/turtle/cmd_vel</mark>. The message type of this topic is ```geometry_msgs/Twist``` and more information about it can be obtained using the command:
+Since we will be testing the code on the turtle, we can check the topics used using the command ```rostopic list``` after the application is up and running. The exact topic that we will use for this purpose is the ```turtle/cmd_vel```. The message type of this topic is ```geometry_msgs/Twist``` and more information about it can be obtained using the command:
 
 ```bash
 rosmsg show geometry_msgs/Twist
