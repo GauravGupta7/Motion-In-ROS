@@ -4,7 +4,7 @@
 
 Motion can be movement in a straight line, rotation at a fixed position or simultaneous rotation and linear motion. 
 
-**Motion in straight line**
+**A. Motion in straight line**
 
 Linear:  
 * x: *speed*  
@@ -17,7 +17,7 @@ Angular:
 * Z: 0
 
 
-**Rotation in place**
+**B. Rotation in place**
 
 Linear:  
 * x: 0  
@@ -29,7 +29,7 @@ Angular:
 * Y: 0
 * Z: *speed*  (yaw)
 
-**Go to goal**
+**C. Go to goal**
 
 In this case the motion should be smooth. To handle this, we implement a strategy where the speeds are a function of a distance in case of linear components and a function of an angle in case of angular component. 
 
@@ -43,7 +43,7 @@ Angular:
 * Y: 0
 * Z: *f(angle)*
 
-**Spiral motion**  
+**D. Spiral motion**  
 The below mentioned configuration is used for implementing spiral motion in a robot: 
 
 Linear:  
