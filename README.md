@@ -93,3 +93,13 @@ float32 theta
 float32 linear_velocity
 float32 angular_velocity
 ```
+
+## **3. The Divide and Conquer Approach.**
+
+We will divide the entire cleaning application of the robot (basically the motion of the robot) into simpler elementary components such that the entire process can be completed using combinations of these elemntary components. The components are: 
+
+* Step 1: Develop a function to move in a straight line for a certain distance, forward or backward.
+* Step 2: Develop a function to rotate in place for a certain angle, CW or CCW. 
+* Step 3: Develop a function to go to a goal location. 
+* Step 4: Develop a function to move in a spiral shape. 
+* Step 5: Integrate all together to develop the cleaning application. 
