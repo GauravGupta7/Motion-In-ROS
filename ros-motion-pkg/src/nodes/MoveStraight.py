@@ -30,7 +30,7 @@ def move_straight(velocity_publisher, speed, distance, is_forward):
         velocity_message.linear.x = -abs(speed)
 
     distance_moved = 0.0
-    loop_rate = rospy.Rate(10)
+    loop_rate = rospy.Rate(10000)
 
     while True:
         rospy.loginfo("Turtle moves forward")
@@ -86,7 +86,7 @@ def rotate(velocity_publisher, anglular_speed_degree, relative_angle_degree, is_
     else:
         velocity_message.angular.z=abs(anglular_speed)
 
-    loop_rate=rospy.Rate(1000) # Publishing at the rate of 10Hz (10 times per sec.)
+    loop_rate=rospy.Rate(10000) # Publishing at the rate of 10Hz (10 times per sec.)
     t0=rospy.Time.now().to_sec()
 
     while True:
@@ -120,7 +120,13 @@ if __name__=="__main__":
         time.sleep(2)
 
         move_straight(velocity_publisher, 10.0, 4.0, True)
-        rotate(velocity_publisher, 45.0, 90.0, True)
+        rotate(velocity_publisher, 30, 90.0, True)
+        move_straight(velocity_publisher, 10.0, 4.0, True)
+        rotate(velocity_publisher, 30, 90.0, True)
+        move_straight(velocity_publisher, 10.0, 4.0, True)
+        rotate(velocity_publisher, 30, 90.0, True)
+        move_straight(velocity_publisher, 10.0, 4.0, True)
+
 
     except rospy.ROSInterruptException:
         pass
