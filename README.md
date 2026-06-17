@@ -103,3 +103,16 @@ We will divide the entire cleaning application of the robot (basically the motio
 * Step 3: Develop a function to go to a goal location. 
 * Step 4: Develop a function to move in a spiral shape. 
 * Step 5: Integrate all together to develop the cleaning application. 
+
+
+
+## **$ Executing the Implementation**
+
+**GoToGoal.py:** After you have cloned and setup the repository in your local machine, you can run the launch file named "SendToGoal.launch" to execute the above node. In the terminal, input the values for *goal.x*, *goal.y* and *distance_tollerance*. After which the Turtlebot will travel in a path like this.
+
+```bash
+gg-pc:~/catkin_ws/src/Motion-In-ROS/ros-motion-pkg$ roslaunch ros-motion-pkg SendToGoal.launch
+``` 
+
+![Output of GoToGoal.py](/images/Screenshot%20from%202026-06-18%2001-20-25.png)
+
