@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<launch>
+    <node pkg="turtlesim" type="turtlesim_node" name="turtle1" />
+    <node pkg="ros-motion-pkg" type="SpiralMotion.py" name="Node_SpiralMotion" output="screen" />
+</launch>
