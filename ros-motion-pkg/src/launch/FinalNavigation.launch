@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+    <node pkg="turtlesim" type="turtlesim_node" name="turtle1" />
+    <node pkg="ros-motion-pkg" type="FinalNavigation.py" name="turtlesim_motion_pose" output="screen" />
+</launch>
+
