@@ -3,3 +3,4 @@
     <node pkg="turtlesim" type="turtlesim_node" name="turtle1" />
     <node pkg="ros-motion-pkg" type="GoToGoal.py" name="Node_GoToGoal" output="screen" />
 </launch>
+
